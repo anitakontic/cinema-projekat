@@ -1,5 +1,4 @@
 /* ANIMACIJA */
-
 .color-change-2x {
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 2s linear infinite alternate both;
@@ -17,9 +16,9 @@ iframe {
   display: flex;
   margin: auto;
   border-radius: 30px;
-  background-color: 33;
 }
 
+/* NAVIGACIONI MENI */
 .navbar {
   display: flex;
   align-items: center;
