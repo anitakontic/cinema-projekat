@@ -1,0 +1,651 @@
+/* ANIMACIJA */
+
+.color-change-2x {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+iframe {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  border-radius: 30px;
+  background-color: 33;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.navbar .logo {
+  width: 120px;
+  padding: 10px 15px;
+}
+
+.nav-menu {
+  padding: 0px;
+  text-align: center;
+}
+
+.nav-menu .nav-item {
+  display: inline;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.nav-menu .nav-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.nav-menu .nav-item a:hover {
+  background-color: beige;
+  color: brown;
+}
+
+/* POCETNA */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container img {
+  width: 350px;
+}
+
+.container h1 {
+  line-height: 38px;
+  font-weight: bolder;
+}
+
+.heading-outer {
+  padding-top: 3px;
+}
+
+.heading-outer h2 {
+  text-align: center;
+}
+
+.repertoar,
+.uskoro {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.slike,
+.slike-2 {
+  display: flex;
+}
+
+.slike .items img {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.repertoar .text {
+  font-size: 20px;
+}
+
+.text a,
+.text-2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 16px;
+  transition: 0.2s ease;
+}
+
+.text a:hover,
+.text-2 a:hover {
+  background-color: beige;
+  border: 1px solid beige;
+  color: brown;
+}
+
+.slike-2 .items-2 img {
+  height: 250px;
+}
+
+.uskoro .text-2 {
+  font-size: 20px;
+  text-align: right;
+}
+
+.footer-background {
+  background-color: rgb(33, 33, 33);
+}
+
+.footer {
+  padding-top: 10px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: small;
+}
+
+.footer-img {
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
+  width: 120px;
+}
+
+.icons {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.icons i:hover {
+  color: brown;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* REPERTOAR, USKORO */
+.heading-h2 {
+  padding: 10px 40px;
+  background-color: brown;
+}
+
+.dani .dani-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}
+
+.dani .dani-menu .dani-item {
+  list-style: none;
+}
+
+.dani .dani-menu .dani-item a {
+  text-decoration: none;
+  color: brown;
+  background-color: beige;
+  padding: 5px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.dani .dani-menu .dani-item a:hover {
+  background-color: brown;
+  color: beige;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.card-slike {
+  display: flex;
+}
+
+.card-slike img {
+  height: 250px;
+}
+
+.card .opis {
+  display: flex;
+}
+
+.card .termin {
+  display: flex;
+  text-align: center;
+  background-color: brown;
+  padding: 0px 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.termin:hover {
+  background-color: beige;
+  color: brown;
+  cursor: pointer;
+}
+
+.termin-container {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.termin-rezervacije {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 10px;
+}
+
+.uskoro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-uskoro {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 800px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+/* CENOVNIK */
+.tabela {
+  margin-top: 50px;
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
+}
+
+table thead {
+  background-color: brown;
+  text-align: center;
+}
+
+table th,
+td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid gray;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid brown;
+}
+
+table td {
+  text-align: center;
+}
+
+/* REZERVACIJA */
+.form-container {
+  display: flex;
+  background-color: rgb(197, 197, 197);
+  border-radius: 30px;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+input {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 4px 6px 11px -2px rgba(0, 0, 0, 0.37);
+}
+
+button {
+  background-color: brown;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 10px 18px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+/* ANIMACIJA */
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+
+  100% {
+    background: #b22cff;
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+
+  100% {
+    background: #b22cff;
+  }
+}
+
+/* TELEFON */
+@media screen and (min-width:320px) and (max-width:425px) {
+  .navbar {
+    display: block;
+    padding: 0px;
+  }
+
+  .navbar .logo {
+    width: 80px;
+  }
+
+  .navbar-logo img {
+    display: block;
+    margin: auto;
+  }
+
+  .nav-menu {
+    margin: 0px;
+  }
+
+  .nav-menu .nav-item {
+    font-size: 12px;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  .nav-menu .nav-item a {
+    padding: 0px 5px;
+  }
+
+  .container {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .container h1 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .container img {
+    width: 60%;
+  }
+
+  .heading-outer h2 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .repertoar {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .repertoar .text,
+  .uskoro .text-2 {
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .text a,
+  .text-2 a {
+    font-size: 10px;
+  }
+
+  .slike .items img,
+  .slike-2 .items-2 img {
+    height: 100px;
+    margin: 0px;
+  }
+
+  .slike,
+  .slike-2 {
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .uskoro {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .text-2 p {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    padding-top: 5px;
+    display: block;
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .footer-img {
+    width: 80px;
+  }
+
+  .icons {
+    font-size: 12px;
+    gap: 12px;
+  }
+
+  .heading-h2 {
+    font-size: 15px;
+    padding: 5px 15px;
+  }
+
+  .dani .dani-menu {
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .dani-item a {
+    font-size: 12px;
+  }
+
+  .card {
+    display: block;
+    width: 200px;
+    margin: 20px;
+  }
+
+  .card-slike {
+    display: block;
+    text-align: center;
+  }
+
+  .card-slike img {
+    height: 200px;
+    align-items: center;
+  }
+
+  .card .opis {
+    display: block;
+  }
+
+  .opis p {
+    font-size: 12px;
+  }
+
+  .termin-container p {
+    font-size: 12px;
+  }
+
+  .termin-rezervacije {
+    justify-content: center;
+  }
+
+  .tabela {
+    margin: 30px auto;
+  }
+
+  table {
+    font-size: 12px;
+    width: 200px;
+  }
+
+  .form-container {
+    width: 60%;
+    margin: 30px auto;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  iframe {
+    width: 70%;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar .logo {
+    width: 100px;
+  }
+
+  .nav-menu .nav-item {
+    font-size: 15px;
+  }
+
+  .nav-menu .nav-item a {
+    padding: 0px;
+  }
+
+  .container img {
+    width: 300px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .heading-outer h2 {
+    font-size: 18px;
+  }
+
+  .repertoar,
+  .uskoro {
+    margin-bottom: 30px;
+  }
+
+  .repertoar .text,
+  .uskoro .text-2 {
+    font-size: 14px;
+  }
+
+  .repertoar .text a,
+  .uskoro .text-2 a {
+    font-size: 14px;
+  }
+
+  .slike .items img,
+  .slike-2 .items-2 img {
+    height: 200px;
+  }
+
+  .footer {
+    font-size: 11px;
+    margin-top: 30px;
+    padding: 0px;
+  }
+
+  .footer-img {
+    width: 100px;
+  }
+
+  .icons {
+    font-size: 15px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 650px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .heading-h2 {
+    font-size: 18px;
+  }
+
+  .tabela {
+    font-size: 14px;
+    margin: 30px;
+  }
+
+  table {
+    width: 500px;
+  }
+
+  .form-container {
+    width: 30%;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 70%;
+  }
+}
