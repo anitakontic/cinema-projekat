@@ -1,4 +1,5 @@
 /* ANIMACIJA */
+
 .color-change-2x {
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
   animation: color-change-2x 2s linear infinite alternate both;
@@ -16,9 +17,9 @@ iframe {
   display: flex;
   margin: auto;
   border-radius: 30px;
+  background-color: 33;
 }
 
-/* NAVIGACIONI MENI */
 .navbar {
   display: flex;
   align-items: center;
@@ -97,6 +98,7 @@ iframe {
 .slike .items img {
   height: 250px;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 .repertoar .text {
@@ -123,6 +125,7 @@ iframe {
 
 .slike-2 .items-2 img {
   height: 250px;
+  margin-right: 10px;
 }
 
 .uskoro .text-2 {
@@ -440,7 +443,7 @@ button:hover {
   .slike .items img,
   .slike-2 .items-2 img {
     height: 100px;
-    margin: 0px;
+    margin: 3px;
   }
 
   .slike,
