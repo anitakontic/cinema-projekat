@@ -32,9 +32,6 @@
                 <a href="uskoro.html">Uskoro</a>
             </li>
 
-            <li class="nav-item">
-                <a href="cenovnik.html">Cenovnik</a>
-            </li>
         </ul>
     </div>
 
@@ -42,11 +39,11 @@
 
     <div class="form-container">
         <form>
-            <input type="text" placeholder="Ime"><br>
-            <input type="text" placeholder="Prezime"><br>
-            <input type="email" placeholder="Email"><br>
-            <input type="tel" placeholder="Telefon"><br>
-            <button type="submit">Rezerviši</button>
+            <input id="ime" type="text" placeholder="Ime" required><br>
+            <input id="prezime" type="text" placeholder="Prezime" required><br>
+            <input id="email" type="email" placeholder="Email" required><br>
+            <input id="tel" type="tel" placeholder="Telefon" required><br>
+            <input id="button" type="submit" value="Rezerviši" onclick="izbaciPoruku()"></button>
         </form>
     </div>
 
@@ -77,6 +74,8 @@
             width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
