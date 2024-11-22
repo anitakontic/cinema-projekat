@@ -4,18 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="galerija bioskop, bioskop galerija, promenada bioskop, bioskop promenada, big bioskop, ada mall bioskop, 
-        bioskop novi sad, bioskop beograd, cinema, bioskop, film, filmovi, repertoar, projekcije, 2d projekcije, 3d projekcije"/>
-    <meta name="title" content="Cinema"/>
-    <meta name="copyright" content="Anita Kontić"/>
-    <meta name="description" content="Bioskop Cinema nudi bogat repertoar sa najnovijim filmovima! Uživajte u 2D i 3D projekcijama na savremenim ekranima i doživite 
-        filmove na potpuno novom nivou!"/>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />   
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
     <link rel="icon" type="image/png" href="img/cinema-title.png">
-    
+
     <title>Cinema</title>
 </head>
 
@@ -38,15 +32,12 @@
                 <a href="uskoro.html">Uskoro</a>
             </li>
 
-            <li class="nav-item">
-                <a href="cenovnik.html">Cenovnik</a>
-            </li>
         </ul>
     </div>
 
     </div>
     <div class="container">
-        <h1>Bioskop izvan granica na<br>velikom ekranu.
+        <h1>Izvan granica na<br>velikom ekranu.
             <br>Iskusite filmsku magiju!
         </h1>
 
@@ -65,18 +56,25 @@
 
                 <div class="slike">
                     <div class="items">
-                        <img src="img/titina.jpg">
+                        <img id="slika1" src="img/titina.jpg" onclick="prikaziVise(0)" onmouseover="povecajSliku('slika1', true)"
+                            onmouseout="povecajSliku('slika1', false)" style="cursor: pointer;">
                     </div>
 
                     <div class="items">
-                        <img src="img/operativac.jpg">
+                        <img id="slika2" src="img/operativac.jpg" onclick="prikaziVise(1)" onmouseover="povecajSliku('slika2', true)"
+                            onmouseout="povecajSliku('slika2', false)" style="cursor: pointer;">
                     </div>
 
                     <div class="items">
-                        <img src="img/napoleon.jpg">
+                        <img id="slika3" src="img/napoleon.jpg" onclick="prikaziVise(2)" onmouseover="povecajSliku('slika3', true)"
+                            onmouseout="povecajSliku('slika3', false)" style="cursor: pointer;">
                     </div>
                 </div>
+
+                <p id="polje"></p>
+
             </div>
+
         </div>
     </div>
 
@@ -118,7 +116,7 @@
             <p>Tel: +381 (0) 21 447 690<br>
                 Fax: +381 (0) 21 521 942</p>
 
-            <p>office@bioskopcinema.com</p>
+            <p>office@arenacineplex.com</p>
         </footer>
 
         <img class="footer-img" src="img/cinema-logo.png">
@@ -136,6 +134,8 @@
             width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
