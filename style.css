@@ -82,6 +82,15 @@ iframe {
   text-align: center;
 }
 
+#polje{
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+}
+
 .repertoar,
 .uskoro {
   display: flex;
@@ -95,8 +104,12 @@ iframe {
   display: flex;
 }
 
-.slike .items img {
+#slika1 ,#slika2, #slika3{
   height: 250px;
+
+}
+
+.slike .items img {
   margin-bottom: 20px;
   margin-right: 10px;
 }
@@ -302,6 +315,7 @@ table td {
   align-items: center;
   padding: 20px;
   margin: 50px auto;
+  text-align: center;
 }
 
 input {
@@ -314,7 +328,8 @@ input {
   box-shadow: 4px 6px 11px -2px rgba(0, 0, 0, 0.37);
 }
 
-button {
+#button {
+  cursor: pointer;
   background-color: brown;
   border-radius: 20px;
   font-size: 18px;
@@ -327,7 +342,7 @@ button {
   margin-top: 10px;
 }
 
-button:hover {
+#button:hover {
   opacity: 70%;
   cursor: pointer;
 }
@@ -397,6 +412,10 @@ button:hover {
 
   .container img {
     width: 60%;
+  }
+
+  #polje{
+    display: flex;
   }
 
   .heading-outer h2 {
