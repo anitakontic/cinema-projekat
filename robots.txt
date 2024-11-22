@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://anitakontic.github.io/cinema-projekat/sitemap.xml
