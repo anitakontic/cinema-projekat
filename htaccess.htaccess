@@ -1,0 +1,48 @@
+# Omogućavanje mod_rewrite za prepisivanje URL-ova
+RewriteEngine On
+
+# 1. Redirekcija sa HTTP na HTTPS (ako koristite SSL)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. Redirekcija sa www na bez www (ako to želite)
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# 3. Prilagođeni 404 Error page (ako stranica nije pronađena)
+ErrorDocument 404 /404.html
+
+# 4. Keširanje statičkih fajlova (slike, CSS, JS, itd.)
+<FilesMatch "\.(jpg|jpeg|png|gif|css|js|pdf|txt|xml|swf|ttf|woff|woff2)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# 5. Sprečavanje hotlinkovanja slika (ne žele da drugi sajtovi koriste vaše slike)
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?vasbioskop\.com/ [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
+
+# 6. Podesite dozvole za fajlove i direktorijume (ako je potrebno)
+<FilesMatch "\.(htaccess|htpasswd|ini|log|conf)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# 7. Kompresija GZIP za smanjenje veličine fajlova
+<IfModule mod_deflate.c>
+    # Kompresujte tekstualne fajlove
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/x-javascript application/javascript application/json
+    # Kompresujte fontove
+    AddOutputFilterByType DEFLATE application/font-woff application/font-woff2
+</IfModule>
+
+# 8. Zaštita od SQL injekcija i drugih uobičajenih napada
+<IfModule mod_rewrite.c>
+    RewriteCond %{QUERY_STRING} (union|select|insert|drop|--|\*|\/|%3D|%27|%22|%3C|%3E) [NC]
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
+
+# 9. Podesite maksimalnu veličinu za upload fajlova (ako je potrebno)
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+php_value max_execution_time 300
