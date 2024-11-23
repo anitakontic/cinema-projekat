@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cinema, bioskop, film, filmovi, repertoar, pogledajte, projekcija, projekcije, 2D projekcije, 3D projekcije promenada bioskop, bioskop promenada, novi sad bioskop, bioskop novi sad">
+    <meta name="keywords"
+        content="cinema, bioskop, film, filmovi, repertoar, pogledajte, projekcija, projekcije, 2D projekcije, 3D projekcije promenada bioskop, bioskop promenada, novi sad bioskop, bioskop novi sad">
     <meta name="title" content="Bioskop Cinema">
     <meta name="copyright" content="Anita Kontić">
     <meta name="description" content="Bioskop Cinema je pravo mesto za ljubitelje filma. Uz bogat repertoar filmova i 
@@ -12,6 +13,12 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <meta property="og:url" content="https://anitakontic.github.io/cinema-projekat/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bioskop Cinema" />
+    <meta property="og:description" content="Bioskop Cinema je pravo mesto za ljubitelje filma. Uz bogat repertoar filmova i redovne projekcije, uživajte u vrhunskom filmskom doživljaju." />
+    <meta property="og:image" content="https://anitakontic.github.io/cinema-projekat/img/cinema.png" />
 
     <link rel="icon" href="img/cinema-favicon.png">
 
@@ -29,11 +36,11 @@
                 <li class="nav-item">
                     <a href="index.html">Početna</a>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="repertoar.html">Repertoar</a>
                 </li>
-    
+
                 <li class="nav-item">
                     <a href="uskoro.html">Uskoro</a>
                 </li>
@@ -65,18 +72,21 @@
 
                 <div class="slike">
                     <div class="items">
-                        <img id="slika1" alt="film-titina" src="img/titina.jpg" onclick="prikaziVise(0)" onmouseover="povecajSliku('slika1', true)"
-                            onmouseout="povecajSliku('slika1', false)" style="cursor: pointer;">
+                        <img id="slika1" alt="film-titina" src="img/titina.jpg" onclick="prikaziVise(0)"
+                            onmouseover="povecajSliku('slika1', true)" onmouseout="povecajSliku('slika1', false)"
+                            style="cursor: pointer;">
                     </div>
 
                     <div class="items">
-                        <img id="slika2" alt="film-operativac" src="img/operativac.jpg" onclick="prikaziVise(1)" onmouseover="povecajSliku('slika2', true)"
-                            onmouseout="povecajSliku('slika2', false)" style="cursor: pointer;">
+                        <img id="slika2" alt="film-operativac" src="img/operativac.jpg" onclick="prikaziVise(1)"
+                            onmouseover="povecajSliku('slika2', true)" onmouseout="povecajSliku('slika2', false)"
+                            style="cursor: pointer;">
                     </div>
 
                     <div class="items">
-                        <img id="slika3" alt="film-napoleon" src="img/napoleon.jpg" onclick="prikaziVise(2)" onmouseover="povecajSliku('slika3', true)"
-                            onmouseout="povecajSliku('slika3', false)" style="cursor: pointer;">
+                        <img id="slika3" alt="film-napoleon" src="img/napoleon.jpg" onclick="prikaziVise(2)"
+                            onmouseover="povecajSliku('slika3', true)" onmouseout="povecajSliku('slika3', false)"
+                            style="cursor: pointer;">
                     </div>
                 </div>
                 <p id="polje"></p>
@@ -135,9 +145,17 @@
             <i class="fa-brands fa-facebook"></i>
         </div>
 
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v21.0"></script>
+
+        <div class="fb-like" data-href="https://anitakontic.github.io/cinema-projekat/" data-width="" data-layout=""
+            data-action="" data-size="" data-share="true"></div>
+
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7048439735217!2d19.84274407626257!3d45.253760971071266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b10690deb9475%3A0xfb46e6b8df13b361!2z0JHQuNC-0YHQutC-0L8g4oCe0JDRgNC10L3QsCDQodC40L3QtdC_0LvQtdC60YHigJ0!5e0!3m2!1ssr!2srs!4v1702729212119!5m2!1ssr!2srs"
-            width="400" height="200" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="400" height="200" style="border:0;" allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
     <script src="script.js"></script>
